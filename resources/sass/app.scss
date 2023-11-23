@@ -1,0 +1,103 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+@import "../../node_modules/vue-slider-component/theme/default.css";
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.no-scrollbar::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.no-scrollbar {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+.vue-slider-process {
+  background-color: #395BEA !important;
+}
+
+.modal-screen {
+  position: fixed;
+  z-index: 60;
+  left: 0;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  display: -webkit-flex;
+  -webkit-justify-content: center;
+  align-items: center;
+  -webkit-align-items: center;
+}
+
+.modal-container {
+  width: 100%;
+  max-width: 640px;
+  border-radius: 4px;
+  max-height: 90%;
+  overflow-y: scroll;
+
+  box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.3);
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.3);
+  -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.3);
+}
+
+.modal-large {
+  max-width: 80%;
+  max-height: 80%;
+  height: 100%;
+}
+
+.modal-fullscreen {
+  max-width: 100%;
+  max-height: 100%;
+  height: 100%;
+}
+
+.modal-enter-active,
+.modal-leave-active {
+  transition: all 0s;
+}
+.modal-enter,
+.modal-leave-to {
+  opacity: 0;
+}
+
+@media screen and (max-width: 640px) {
+  .modal-screen {
+    align-items: flex-end;
+    -webkit-align-items: flex-end;
+    bottom: 0;
+  }
+
+  .modal-draggable {
+    max-height: 95%;
+  }
+
+  .modal-screen-enter-active,
+  .modal-screen-leave-active {
+    transition: all 0.3s;
+  }
+
+  .modal-screen-enter, .modal-screen-leave-to {
+    bottom: -10%;
+  }
+
+  .modal-container {
+    border-radius: 0px;
+  }
+
+  .modal-rounded {
+    border-top-left-radius: 24px;
+    border-top-right-radius: 24px;
+    padding-top: 16px;
+  }
+
+  .modal-large {
+    max-width: 100%;
+    max-height: 100%;
+    height: 100%;
+  }
+}

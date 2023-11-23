@@ -1,0 +1,45 @@
+{
+    "private": true,
+    "scripts": {
+        "dev": "npm run development",
+        "development": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+        "watch": "npm run development -- --watch",
+        "watch-poll": "npm run watch -- --watch-poll",
+        "hot": "cross-env NODE_ENV=development node_modules/webpack-dev-server/bin/webpack-dev-server.js --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js",
+        "prod": "npm run production",
+        "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --no-progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
+    },
+    "devDependencies": {
+        "autoprefixer": "^9.8.8",
+        "axios": "^0.27.2",
+        "cross-env": "^5.1",
+        "laravel-mix": "^4.0.7",
+        "lodash": "^4.17.13",
+        "postcss": "^7.0.39",
+        "resolve-url-loader": "^2.3.1",
+        "sass": "^1.15.2",
+        "sass-loader": "^7.1.0",
+        "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.2.17",
+        "vue-template-compiler": "^2.7.8"
+    },
+    "dependencies": {
+        "@babel/plugin-syntax-dynamic-import": "^7.8.3",
+        "algoliasearch": "^4.14.2",
+        "chart.js": "^3.8.0",
+        "chartjs-adapter-date-fns": "^3.0.0",
+        "date-fns": "^2.30.0",
+        "fuse.js": "^6.6.2",
+        "instantsearch.css": "^7.4.5",
+        "isset-php": "^1.0.7",
+        "laravel-mix-alias": "^1.0.3",
+        "moment": "^2.29.4",
+        "search-insights": "^2.2.1",
+        "underscore": "^1.13.6",
+        "vue": "2.*",
+        "vue-chartjs": "^4.*",
+        "vue-instantsearch": "^4.5.0",
+        "vue-router": "^3.5.2",
+        "vue-slider-component": "^3.2.20",
+        "vuex": "^3.5.1"
+    }
+}
